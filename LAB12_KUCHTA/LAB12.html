@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Information</h1>
+    <div class="container">
+        <script>
+            // Оголошення змінних
+            let firstName = "Віталій";
+            let lastName = "Кухта";
+            let group = "КН-323";
+            let birthYear = 2006;
+            let isMarried = false;
+
+            // Виведення значень змінних та їх типів
+            document.write(`<p>Ім'я: ${firstName} (тип: ${typeof firstName})</p>`);
+            document.write(`<p>Прізвище: ${lastName} (тип: ${typeof lastName})</p>`);
+            document.write(`<p>Група: ${group} (тип: ${typeof group})</p>`);
+            document.write(`<p>Рік народження: ${birthYear} (тип: ${typeof birthYear})</p>`);
+            document.write(`<p>Сімейний стан: ${isMarried} (тип: ${typeof isMarried})</p>`);
+
+            // Створення змінних типу Null і Undefined
+            let nullVariable = null;
+            let undefinedVariable;
+
+            // Виведення типів змінних типу Null і Undefined
+            document.write(`<p>Null змінна: ${nullVariable} (тип: ${typeof nullVariable})</p>`);
+            document.write(`<p>Undefined змінна: ${undefinedVariable} (тип: ${typeof undefinedVariable})</p>`);
+        </script>
+    </div>
+    <h2>Введіть ваші дані:</h2>
+    <script>
+        // Запит логіну, емейлу та паролю від користувача
+        let login = prompt("Введіть ваш логін:");
+        let email = prompt("Введіть ваш емейл:");
+        let password = prompt("Введіть ваш пароль:");
+
+        // Виведення повідомлення із введеними даними
+        document.write(`<p>Логін: ${login}</p>`);
+        document.write(`<p>Емейл: ${email}</p>`);
+        document.write(`<p>Пароль: ${password}</p>`);
+    </script>
+</body>
+</html>
